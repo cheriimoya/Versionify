@@ -11,3 +11,4 @@ TODOs:
 - [ ] Logging
 - [ ] Filter what is being saved
 - [ ] Add rollback option to reset playlist to a given checkpoint
+- [ ] Push repo to remote
