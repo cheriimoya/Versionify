@@ -3,7 +3,7 @@ pkgs.rustPlatform.buildRustPackage {
   name = "versionify";
   inherit src;
   nativeBuildInputs = with pkgs; [
-    pkgconfig
+    pkg-config
     openssl
   ];
 

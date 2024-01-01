@@ -8,7 +8,7 @@ mkShell {
     cargo-edit
     cargo-outdated
     cargo-audit
-    pkgconfig
+    pkg-config
     openssl
   ];
 
