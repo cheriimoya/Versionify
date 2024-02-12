@@ -17,12 +17,12 @@ async fn main() {
     };
 
     // Get spotify token
-    let mut spotify = ClientCredsSpotify::new(creds);
+    let spotify = ClientCredsSpotify::new(creds);
     spotify.request_token().await.unwrap();
 
     // Try to load playlist
     let playlist_uri = PlaylistId::from_id(&playlist_id).unwrap();
-    let playlist = spotify.playlist(&playlist_uri, None, None).await;
+    let playlist = spotify.playlist(playlist_uri, None, None).await;
     if playlist.is_err() {
         panic!("No playlist found with this id");
     }
